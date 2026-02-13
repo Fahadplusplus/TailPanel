@@ -53,116 +53,171 @@
   </nav>
   <div class="wrapper">
   <div class="sidebar2">
-      <nav id="sidebar" class="bg-dark d-none d-lg-block">
-        <div class=" d-flex align-items-center " style="margin: 6px 30px 6px 30px; padding: 0px 0px 0px 0px;">
-          <h3 class="text-white p-0 m-0 mx-2">Admin Panel</h3>
-          <i class="bi bi-x ms-auto m-0 p-0 mx-2 fs-1  text-white cross2"></i>
-        </div>
+    <nav id="sidebar" class="bg-dark d-none d-lg-block">
+  <div class="d-flex align-items-center " style="margin: 6px 30px 6px 30px; padding: 0px 0px 0px 0px;">
+    <h4 class="text-white p-0 m-0 mx-2">Admin Panel</h4>
+    <i class="bi bi-x ms-auto m-0 p-0 mx-2 fs-1 text-white cross2"></i>
+  </div>
 
-        <ul class="nav flex-column g-2">
-          <li class="nav-item my-2">
-            <a class="nav-link" href="/index.html">
-              <i class="bi bi-dash-square me-2"></i>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/analytic.html">
-              <i class="bi bi-graph-up me-2"></i>
-              Analytics
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/usermanagemenet.html">
-              <i class="bi bi-people me-2"></i>
-              User Management
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/showcase.html">
-              <i class="bi bi-star me-2"></i>
-              Show case
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/ecomerce.html">
-              <i class="bi bi-cart me-2"></i>
-              E-Commerce
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/charts.html">
-              <i class="bi bi-graph-down-arrow me-2"></i>
-              Chart
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/tables.html">
-              <i class="bi bi-table me-2"></i>
-              Tables
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/forms.html">
-              <i class="bi bi-file-check me-2"></i>
-              Forms
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/uielements.html">
-              <i class="bi bi-stack me-2"></i>
-              Ui Elements
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/components.html">
-              <i class="bi bi-hdd-stack me-2"></i>
-              Components
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/calender.html">
-              <i class="bi bi-calendar-date me-2"></i>
-              Calender
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/auth.html">
-              <i class="bi bi-shield me-2"></i>
-              Authentication
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/pages.html">
-              <i class="bi bi-files me-2"></i>
-              Pages
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/profile.html">
-              <i class="bi bi-person-fill-gear me-2"></i>
-              Profile
-            </a>
-          </li>
-          <li class="nav-item my-2">
-            <a class="nav-link " href="/setting.html">
-              <i class="bi bi-gear me-2"></i>
-              Settings
-            </a>
-          </li>
-        </ul>
-        <div class="d-flex  my-4">
-          <div class="rounded-circle bg-primary mx-2  py-1 px-2 text-white ">
-            AS
-          </div>
-          <div class="  justify-content-center align-items-center">
-            <h2 class="m-0 p-0 text-white" style="font-size: 12px;">Admin User</h2>
-            <p class="p-0 m-0  text-white" style="font-size: 10px;">admin@example.com</p>
-          </div>
-        </div>
-      </nav>
-
+  <ul class="nav flex-column g-2">
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/index.html">
+        <i class="bi bi-dash-square me-2"></i>
+        Dashboard
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/analytic.html">
+        <i class="bi bi-graph-up me-2"></i>
+        Analytics
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/usermanagemenet.html">
+        <i class="bi bi-people me-2"></i>
+        User Management
+      </a>
+    </li>
     
+    <!-- Dropdown for Show case -->
+    <li class="nav-item dropdown my-2">
+      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-star me-2"></i>
+        Show case
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="/showcase-uicomponents.html">
+          <i class="bi bi-images me-2"></i>Ui Components
+        </a></li>
+        <li><a class="dropdown-item" href="/showcase-forms.html">
+          <i class="bi bi-folder me-2"></i>Forms
+        </a></li>
+        <li><a class="dropdown-item" href="/showcase-tables.html">
+          <i class="bi bi-briefcase me-2"></i>Tables
+        </a></li>
+      </ul>
+    </li>
+    
+     <li class="nav-item dropdown my-2">
+      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-star me-2"></i>
+        Ecomerce
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="/Ecomerce-products.html">
+          <i class="bi bi-images me-2"></i>Products
+        </a></li>
+        <li><a class="dropdown-item" href="/Ecomerce-addProduct.html">
+          <i class="bi bi-folder me-2"></i>Add Product
+        </a></li>
+        <li><a class="dropdown-item" href="/Ecomerce-invoices.html">
+          <i class="bi bi-briefcase me-2"></i>Invoices
+        </a></li>
+         <li><a class="dropdown-item" href="/Ecomerce-createInvoices.html">
+          <i class="bi bi-briefcase me-2"></i>Create Invoices
+        </a></li>
+         <li><a class="dropdown-item" href="/Ecomerce-transactions.html">
+          <i class="bi bi-briefcase me-2"></i>Portfolio
+        </a></li>
+         
+      </ul>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/charts.html">
+        <i class="bi bi-graph-down-arrow me-2"></i>
+        Chart
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/tables.html">
+        <i class="bi bi-table me-2"></i>
+        Tables
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/forms.html">
+        <i class="bi bi-file-check me-2"></i>
+        Forms
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/uielements.html">
+        <i class="bi bi-stack me-2"></i>
+        Ui Elements
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/components.html">
+        <i class="bi bi-hdd-stack me-2"></i>
+        Components
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/calender.html">
+        <i class="bi bi-calendar-date me-2"></i>
+        Calender
+      </a>
+    </li>
+    <li class="nav-item dropdown my-2">
+      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-star me-2"></i>
+        Authentication
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="/Auth-login.html">
+          <i class="bi bi-box-arrow-in-right me-2"></i>login
+        </a></li>
+        <li><a class="dropdown-item" href="/Auth-signup.html">
+          <i class="bi bi-box-arrow-in-left me-2"></i>Signup
+        </a></li>
+        <li><a class="dropdown-item" href="/Auth-resetPassword.html">
+          <i class="bi bi-key me-2"></i>Reset Password
+        </a></li>
+      </ul>
+    </li>
+      <li class="nav-item dropdown my-2">
+      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-star me-2"></i>
+        Pages
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="/pages-fileManager.html">
+          <i class="bi bi-images me-2"></i>File Manager
+        </a></li>
+        <li><a class="dropdown-item" href="/pages-pricingTable.html">
+          <i class="bi bi-folder me-2"></i>Pricing Table
+        </a></li>
+        <li><a class="dropdown-item" href="/pages-FAQs.html">
+          <i class="bi bi-question-circle me-2"></i>FAQs
+        </a></li>
+      </ul>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/profile.html">
+        <i class="bi bi-person-fill-gear me-2"></i>
+        Profile
+      </a>
+    </li>
+    <li class="nav-item my-2">
+      <a class="nav-link" href="/setting.html">
+        <i class="bi bi-gear me-2"></i>
+        Settings
+      </a>
+    </li>
+  </ul>
+  
+  <div class="d-flex my-4">
+    <div class="rounded-circle bg-primary mx-2 py-1 px-2 text-white">
+      AS
+    </div>
+    <div class="justify-content-center align-items-center">
+      <h2 class="m-0 p-0 text-white" style="font-size: 12px;">Admin User</h2>
+      <p class="p-0 m-0 text-white" style="font-size: 10px;">admin@example.com</p>
+    </div>
+  </div>
+</nav>
+
+      
 
     </div>
 
