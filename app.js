@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
      const cross2 = document.querySelector('.cross2')
     const body = document.getElementsByTagName('body')
 
+ 
+      
+
     // Function to set active nav link
 function setActiveNavLink() {
   const currentPage = window.location.pathname;
