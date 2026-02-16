@@ -125,6 +125,14 @@ cross2.addEventListener('click', () => {
   }
   
 });   
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 992) {
+    document.querySelector('.main-content').style.marginLeft = '';
+    document.querySelector('.nav2').style.marginLeft = '';
+    sidebar2.classList.remove('open2');
+  }
+});
+
     
 burger.addEventListener('click', () => {
   sidebar.classList.add('open');
@@ -162,6 +170,8 @@ cross.addEventListener('click', () => {
     data: [120, 200, 120, 360]
   }]
 });
+
+
 
 
 
