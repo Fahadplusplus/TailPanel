@@ -905,26 +905,27 @@
                                 </div>
 
                                 <div class="mt-4">
-                                   <h6>Drawer</h6>
+                                    <h6>Drawer</h6>
 
                                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                                         data-bs-target="#drawerRight">
                                         Open Drawer
                                     </button>
 
-                                    
+
                                 </div>
 
-                               
+
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="drawerRight">
                                     <div class="offcanvas-header">
                                         <div class="offcanvas-title">
-                                             <h5 >Drawer Title</h5>
-                                         <p >this is a drawer description</p>
+                                            <h5>Drawer Title</h5>
+                                            <p>this is a drawer description</p>
 
                                         </div>
-                                       
-                                        <button type="button" class="btn-close "  data-bs-dismiss="offcanvas" style="margin-bottom: 40px;"></button>
+
+                                        <button type="button" class="btn-close " data-bs-dismiss="offcanvas"
+                                            style="margin-bottom: 40px;"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <p>This is a right drawer content.</p>
@@ -936,26 +937,129 @@
                                     </div>
                                 </div>
 
+
+                                <div class="dropdown mt-4">
+                                    <h6>Dropdown Menu</h6>
+                                    <button class="btn btn-secondary  dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        Options
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <hr>
+                                        <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div class=" mt-4">
+                                    <h6>Popover</h6>
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                        data-bs-title="Popover Title" data-bs-content="This is the popover content.">
+                                        Click for Popover
+                                    </button>
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="bg-white rounded-3 shadow-sm p-3">
+
+                                <h3>loading States</h3>
+
+                               <button class="btn btn-primary skeleton">Load skeletons</button>
+                                <div class="container mt-5 loadings">
+                                    <!-- Card Skeleton -->
+                                    <div class="card" aria-hidden="true">
+                                        <div class="card-body">
+                                            <h5 class="card-title placeholder-glow">
+                                                <span class="placeholder col-6"></span>
+                                            </h5>
+                                            <p class="card-text placeholder-glow">
+                                                <span class="placeholder col-7"></span>
+                                                <span class="placeholder col-4"></span>
+                                                <span class="placeholder col-4"></span>
+                                                <span class="placeholder col-6"></span>
+                                            </p>
+                                            <a class="btn btn-primary disabled placeholder col-6"
+                                                aria-disabled="true"></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- List Skeleton -->
+                                    <div class="mt-4">
+                                        <p class="placeholder-glow">
+                                            <span class="placeholder col-12"></span>
+                                            <span class="placeholder col-8"></span>
+                                            <span class="placeholder col-10"></span>
+                                        </p>
+                                    </div>
+
+                                    <!-- Image Skeleton -->
+                                    <div class="mt-4">
+                                        <span class="placeholder col-12" style="height: 200px; display: block;"></span>
+                                    </div>
+                                </div>
+
+                                <p class="text-center text-secondary my-5 loadText">Click "Load skeleton" to see loadings</p>
+
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="bg-white rounded-3 shadow-sm p-3">
+                               <h3 class="mt-3 mb-5"> Empty States</h3>
+                               <div class="d-flex justify-content-center">
+                                <div class=" rounded-circle d-flex justify-content-center align-items-center" style="width: 50px ;
+                                height: 50px; background-color: rgb(199, 199, 199);">
+                                
+                                    <i class="bi bi-person fs-2"></i>
+
+                                </div>
+                               </div>
+                                  <h6 class="text-center mt-3">No user found</h6>
+                                  <p class="text-center">Get started by adding your first user to the system.</p>
+                                    <div class="d-flex justify-content-center mb-5"> 
+                                    <button class="btn btn-primary">+ Add User</button>
+                                    <button class="btn border-2 border-primary text-primary ms-2">Learn More</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="bg-white rounded-3 shadow-sm p-3">
+                               <h5 class="mt-3 mb-5"> Badges</h5>
+                               <h6>Varients</h6>
+                               <div>
+                                <span class="text-primary rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(207, 205, 205);">Primary</span>
+                                 <span class="text-secondary rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(230, 227, 227);">Secondary</span>
+                                  <span class="text-success rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(240, 240, 240);">Success</span>
+                                   <span class="text-warning rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(238, 237, 210);">Warning</span>
+                                    <span class="text-danger rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(250, 216, 216);">Danger</span>
+                               </div>
+
+                               <h6> Sizes</h6>
+                               <div>
+                                <span class="text-primary rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(207, 205, 205);">Small</span>
+                                  <span class="text-success rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(240, 240, 240);">Medium</span>
+                                   <span class="text-warning rounded-3 text-center" style="padding: 2px 10px 2px 10px; font-size: 14px; background-color: rgb(238, 237, 210);">Large</span>
+                                       </div>
+                                
                                
-
-                              
-
-                            </div>
-                        </div>
-                        <div class="col-12 ">
-                            <div class="bg-white rounded-3 shadow-sm p-3">
+                                 
 
                             </div>
                         </div>
-                        <div class="col-12 ">
-                            <div class="bg-white rounded-3 shadow-sm p-3">
-
-                            </div>
-                        </div>
-
-
-
-
                     </div>
             </section>
         </div>
