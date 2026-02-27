@@ -45,6 +45,14 @@ if (toastTrigger4) {
     toastBootstrap4.show()
   })
 }
+function showToast(message, color) {
+  const toastEl = document.getElementById('liveToast');
+  const toastBody = document.getElementById('toastBody');
+  toastEl.className = "toast text-white " + color;
+  toastBody.innerText = message;
+
+  const toast = new bootstrap.Toast(toastEl);
+  toast.show();}
  
       
 

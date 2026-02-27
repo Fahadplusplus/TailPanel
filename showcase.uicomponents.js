@@ -5,11 +5,19 @@ const overviewT = document.querySelector('.overviewT');
   const settingT = document.querySelector('.settingT');
   const analyticsT = document.querySelector('.analyticsT');
   const openModal = document.querySelector('.openModal')
+  const loading = document.querySelector('.loadings');
+const skeleton = document.querySelector('.skeleton');
+
+skeleton.addEventListener('click', () => {
+    loading.classList.toggle('open');
+    
+
+});
 
   settingT.style.display = 'none'
   analyticsT.style.display = 'none'
 
-  
+
   overview.addEventListener("click",()=>{
    overviewT.style.display = 'block'
   settingT.style.display = 'none'
@@ -33,12 +41,4 @@ analytics.addEventListener("click",()=>{
     const modal = new bootstrap.Modal(document.getElementById('myModal'));
     modal.show();
 });
- document.getElementById('openDrawerBtn').addEventListener('click', function() {
-    const drawer = new bootstrap.Offcanvas(document.getElementById('drawerLeft'));
-    drawer.show();
-});
-
-
-
-
 
