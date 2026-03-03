@@ -135,24 +135,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  window.addEventListener('resize', () => { 
-    if (window.innerWidth < 992)
-       { document.querySelector('.main-content').style.marginLeft = '';
-         document.querySelector('.nav2').style.marginLeft = ''; 
-         sidebar2.classList.remove('open2'); 
-        } 
-      });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 992) {
+      sidebar.classList.add('open');
+      document.body.classList.add('no-scroll');
+      document.querySelector('.main-content').style.marginLeft = '';
+      document.querySelector('.nav2').style.marginLeft = '';
+      sidebar2.classList.remove('open2');
+    }
+
+    if (window.innerWidth > 992) {
+      sidebarr.classList.add('open2');
+      document.querySelector('.main-content').style.marginLeft = '270px';
+      document.querySelector('.nav2').style.marginLeft = '270px';
+      //sidebar.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
+  });
 
   burger.addEventListener('click', () => {
     sidebar.classList.add('open');
-    // document.body.classList.add('no-scroll');
+
+    document.body.classList.add('no-scroll');
 
 
   });
 
   cross.addEventListener('click', () => {
     sidebar.classList.remove('open');
-    //  document.body.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
   });
 
   Highcharts.chart('myChart', {

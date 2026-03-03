@@ -1,11 +1,10 @@
 @import "bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-body.no-scroll {
-  overflow: hidden;
+body.no-scroll .wrapper {
+ 
+  opacity: 0.5;
 }
-
-
 
 #sidebar {
   position: fixed;
