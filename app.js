@@ -4,6 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
+
   const sidebar = document.querySelector('.sidebar');
   const sidebar2 = document.getElementById('sidebar')
   //const sidebar2 = document.querySelector('.sidebar2');
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const toastLiveExample2 = document.getElementById('liveToast2')
   const toastLiveExample3 = document.getElementById('liveToast3')
   const toastLiveExample4 = document.getElementById('liveToast4')
+  
 
   if (toastTrigger) {
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
@@ -145,13 +147,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (window.innerWidth > 992) {
-      sidebarr.classList.add('open2');
-      document.querySelector('.main-content').style.marginLeft = '270px';
-      document.querySelector('.nav2').style.marginLeft = '270px';
-      //sidebar.classList.remove('open');
+    
+      sidebar.classList.remove('open');
       document.body.classList.remove('no-scroll');
+      
     }
   });
+
+
 
   burger.addEventListener('click', () => {
     sidebar.classList.add('open');
