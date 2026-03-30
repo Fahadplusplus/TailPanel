@@ -169,18 +169,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove('no-scroll');
   });
 
-  Highcharts.chart('myChart', {
-    title: {
-      text: 'Revenue overview'
-    },
-    xAxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr']
-    },
-    series: [{
-      name: 'Sales',
-      data: [120, 400, 150, 300]
-    }]
-  });
+
+Highcharts.chart('myChart', {
+  title: {
+    text: 'Revenue overview'
+  },
+  xAxis: {
+    categories: ['Jan', 'Feb', 'Mar', 'Apr']
+  },
+  series: [{
+    name: 'Sales',
+    data: [120, 400, 150, 300]
+  }]
+});
+
+Highcharts.chart('myChart2', {
+  title: {
+    text: 'Profit VS Expenses'
+  },
+  xAxis: {
+    categories: ['Jan', 'Feb', 'Mar', 'Apr']
+  },
+  series: [{
+    name: 'Sales',
+    data: [120, 200, 120, 360]
+  }]
+});
   Highcharts.chart('myChart2', {
     title: {
       text: 'Profit VS Expenses'
